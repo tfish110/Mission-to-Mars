@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, url_for
-from flask_pymongo import flask_pymongo
+from flask_pymongo import PyMongo
 import scraping
 
 app = Flask(__name__)
@@ -20,5 +20,5 @@ def scrape():
    mars.update_one({}, {"$set":mars_data}, upsert=True)   # update the database
    return redirect('/', code=302)   # This will navigate our page back to where we can see the updated content.
 
-   if __name__ == "__main__":
+if __name__ == "__main__":
    app.run()
