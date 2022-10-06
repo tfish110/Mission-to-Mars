@@ -1,1 +1,3 @@
 # Mission-to-Mars
+
+For this challenge, I successfully completed Deliverable 1, but I struggled with Deliverable 2. While I can see that the code that I edited in scraping.py is successfully getting the image urls and titles into my Mongo database, and the html code that I wrote to loop through the images is successfully iterating four times for the four image urls, I cannot seem to figure out the correct html format to get those urls to properly appear in the "src" attribute of the "img" line. It does also appear to use the proper Bootstrap grid formatting from Deliverable 3, but the images themselves unfortunately do not display properly. I hope that I can get feedback to learn what I am doing wrong in this code.
